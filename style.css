@@ -43,7 +43,28 @@ body {
     color: #4c4d4d;
     font-family: 'Montserrat', sans-serif;
 }
+.robotImage {
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 
+}
+
+.robotImage img{
+    max-height: 300px;
+    object-fit: cover;
+    @media (min-width: 40rem) {
+        max-height: 500px;
+
+    }
+    @media (min-width: 56rem) {
+
+        width: 350px;
+
+    }
+}
 /*-------- Preloader --------*/
 .preloader {
     position: fixed;
