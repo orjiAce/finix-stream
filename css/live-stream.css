@@ -22,7 +22,7 @@ aside{
     right: 10%;
 }
 .video-information {
-
+padding-left: 10px;
     border-bottom: 0.5px solid #606060;
 }
 .comment-counts {
@@ -47,6 +47,18 @@ aside{
     flex-direction: row;
     justify-content: flex-start;
 }
+.comment-input button{
+    width: 120px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: none;
+    background-color: #4406b0;
+    border-radius: 5px;
+    color: #fff;
+    margin-left: 5px;
+    height: 45px;
+}
 .comment-input div {
     fill: #bc407a;
     height: 85%;
@@ -56,7 +68,7 @@ aside{
 }
 .comment-input-line {
     height: 45px;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: #D9D9D9;
 padding: 10px;
 
@@ -66,7 +78,9 @@ padding: 10px;
 }
 .commenttrouble{
     position: relative;
+
 }
+
 .commenttrouble p{
    font-size: 14px;
 }
@@ -78,7 +92,7 @@ padding-left: 15px;
 }
 
 .indiv-comments {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     grid-template-columns: 8% 92%;
     justify-content: flex-start;
@@ -90,8 +104,15 @@ padding-left: 15px;
 .svgtrouble {
     margin-right: 10px;
     height: 40px;
-    position: relative;
+
     width: 40px;
+}
+.svgtrouble img{
+    height: 30px;
+
+    width: 30px;
+    border-radius: 100%;
+    object-fit: cover;
 }
 .like-comments {
     display: grid;
@@ -126,12 +147,13 @@ padding-left: 15px;
 }
 .video-buttons {
     align-items: center;
-    border-bottom-color: gray;
-    border-bottom-style: solid;
+    border-bottom: 0.5px solid #606060;
     color: rgb(61, 61, 61);
     cursor: pointer;
     display: flex;
+    height: 50px;
     justify-content: flex-start;
+    font-size: 16px;
 }
 .video-buttons svg {
     width: 2%;
@@ -151,6 +173,7 @@ padding-left: 15px;
     width: 10%;
 }
 .subscription{
+    height: 100px;
     align-items: center;
     cursor: pointer;
     display: flex;
