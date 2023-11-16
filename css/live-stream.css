@@ -22,6 +22,12 @@ aside{
     right: 10%;
 }
 .video-information {
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 60%;
 padding-left: 10px;
     border-bottom: 0.5px solid #606060;
 }
@@ -42,6 +48,7 @@ padding-left: 10px;
 .comment-input {
     align-items: center;
     height: 100px;
+    width: 80%;
  display: flex;
     padding:0 10px 0 10px ;
     flex-direction: row;
@@ -74,7 +81,7 @@ padding: 10px;
 
   border: none;
     position: relative;
-    width: 70%;
+    width: 100%;
 }
 .commenttrouble{
     position: relative;
@@ -85,7 +92,10 @@ padding: 10px;
    font-size: 14px;
 }
 .comment-section{
-    width: 100%;
+    width: 70%;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
 padding-left: 15px;
     height: auto;
 
@@ -152,8 +162,15 @@ padding-left: 15px;
     cursor: pointer;
     display: flex;
     height: 50px;
+    width: 100%;
     justify-content: flex-start;
+
+}
+.video-buttons p{
     font-size: 16px;
+    color: #151515;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 .video-buttons svg {
     width: 2%;
@@ -173,6 +190,7 @@ padding-left: 15px;
     width: 10%;
 }
 .subscription{
+    width: 100%;
     height: 100px;
     align-items: center;
     cursor: pointer;
@@ -198,16 +216,24 @@ footer{
     border-style: solid;
 }
 .video-section {
+    background-image: url("../assets/signal_BG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-
+    display: flex;
+    flex-direction: column;
+align-items: center;
+    justify-content: center;
 }
 .video{
-    width: 100%;
-    height: 400px;
+    width: 60%;
+    height: 430px;
+
 }
 #video{
     width: 100%;
-    height: 400px;
+    height: 430px;
+
 }
 
 
@@ -233,4 +259,34 @@ footer{
     font-size: 20px;
     left: 100px;
     position: relative;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .video{
+        width: 100%;
+        height: 430px;
+
+    }
+    .video-information {
+        background: white;
+        border-radius: 10px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 90%;
+        padding: 10px;
+
+    }
+    .comment-section{
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        padding-left: 15px;
+        height: auto;
+
+    }
+
 }
